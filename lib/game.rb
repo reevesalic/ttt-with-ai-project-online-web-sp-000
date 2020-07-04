@@ -26,6 +26,7 @@ def current_player
   @board.turn_count % 2 == 0? @player_1 : player_2
 end
 
+
 def winner
   if winning_combo = won?
   @winner = @board.cells[winning_combo.first]
